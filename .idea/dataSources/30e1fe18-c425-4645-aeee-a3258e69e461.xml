@@ -1040,7 +1040,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="303" parent="1" name="trabajadoresdb">
-      <LastIntrospectionLocalTimestamp>2024-08-15.15:50:28</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-15.23:43:29</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="304" parent="1" name="mysql.infoschema">

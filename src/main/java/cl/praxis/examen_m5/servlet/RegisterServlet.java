@@ -59,6 +59,14 @@ public class RegisterServlet extends HttpServlet {
                                 pstmtDireccion.setInt(3, userId);
                                 pstmtDireccion.executeUpdate();
                             }
+
+                            // Insertar en la tabla roles_usuarios con rol ID 2 por defecto
+                            String sqlRolesUsuarios = "INSERT INTO roles_usuarios (usuario_id, rol_id) VALUES (?, ?)";
+                            try (PreparedStatement pstmtRolesUsuarios = connection.prepareStatement(sqlRolesUsuarios)) {
+                                pstmtRolesUsuarios.setInt(1, userId);
+                                pstmtRolesUsuarios.setInt(2, 2); // Rol ID 2 por defecto
+                                pstmtRolesUsuarios.executeUpdate();
+                            }
                         }
                     }
                 }
